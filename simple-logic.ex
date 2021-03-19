@@ -1,6 +1,7 @@
 defmodule SimpleLogic do
-    x = 2
+
     def sample do
+        x = 2
         if x > 1 do
             IO.puts('It is true!')
         else

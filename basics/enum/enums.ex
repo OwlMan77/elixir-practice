@@ -27,4 +27,32 @@ defmodule EnumsModule do
     def each:
         IO.puts(Enum.each([0, 1, 2, 3], fn(x) -> x - 1 end))
     end
+
+    def map:
+        IO.puts(Enum.map([0, 1, 2, 3], fn(x) -> x - 1 end))  
+    end
+
+    def map_using_caputring:
+         IO.puts(Enum.map([1,2,3], &(&1 + 3))
+    end
+
+    def min:
+        IO.puts(Enum.min([5, 3, 0, -1]))  
+    end
+
+    def max:
+        IO.puts(Enum.min([5, 3, 0, -1]))  
+    end
+
+    def filter:
+        IO.puts(Enum.filter([1, 2, 3, 4], fn(x) -> rem(x, 2) == 0 end))
+    end
+
+    def sort:
+        IO.puts(Enum.sort([5, 6, 1, 3, -1, 4]))
+    end
+
+    def unique:
+        IO.puts(Enum.uniq([1, 2, 3, 2, 1, 1, 1, 1, 1]))
+    end
 end

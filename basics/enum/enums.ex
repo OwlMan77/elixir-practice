@@ -25,6 +25,6 @@ defmodule EnumsModule do
     ## Iterative
 
     def each:
-        IO.puts(Enum.map([0, 1, 2, 3], fn(x) -> x - 1 end))
+        IO.puts(Enum.each([0, 1, 2, 3], fn(x) -> x - 1 end))
     end
 end

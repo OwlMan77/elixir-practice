@@ -12,7 +12,6 @@ defmodule Lists do
 
     def head do
         list = ["2", "3", "4", "5"]
-
         IO.puts(hd list)
     end
 
